@@ -1,0 +1,1 @@
+/* here is the javascript that we are going to use to validate the various inputs */

@@ -1,0 +1,36 @@
+/* here we are going to style the various form elements */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(65, 71, 149, 0.561);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     margin: 0;
+}
+.container{
+    background-color: rgba(118, 200, 200, 0.568);
+    border-radius:5px;
+    width: 350px;
+    font-size: small;
+    font-weight: 500;
+}
+.form{
+    padding:20px 40px;
+}
+.input{
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    width:100%;
+}
+#submit{
+    width:100%;
+    padding:10px;
+    border-radius: 5px;
+    border:white;
+    font-weight: 700;
+    margin-top:10px;
+}

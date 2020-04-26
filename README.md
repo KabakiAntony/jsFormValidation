@@ -6,7 +6,7 @@ it shows form validation onsubmit
 
 It uses html5, css3 and vanilla js.
 
-the reason I am using the most simplest of elements 
+The reason I am using the most simplest of elements 
 is you have to understand how to use them before moving on
 to things like bootstrap and the js frameworks for 
 the frontend.
