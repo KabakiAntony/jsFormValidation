@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js form validation</title>
     <link rel="stylesheet" href="./style.css">
-    <script defer src="./validate.js"></script>
+    <!-- <script defer src="./validate.js"></script> -->
 </head>
 <body>
     <div id="container" class="container">
-        <form action="" class="form" id="form">
-            <label for="firstname">First name</label>
-            <input  type="text" class="input" id="firstname">
-            <label for="lastname">Last name</label>
-            <input type="text" class="input" id="lastname">
-            <label for="email">Email</label>
+        <h2 class="form-header">Sign up</h2>
+        <form action="/" class="form" id="form">
+            <label >First name</label>
+            <input  type="text" class="input" id="firstname" required>
+            <label >Last name</label>
+            <input type="text" class="input" id="lastname" required>
+            <label >Email</label>
             <input type="email" class="input" id="email">
-            <label for="password">Password</label>
+            <label >Password</label>
             <input type="password" class="input" id="password">
-            <label for="confirm-password">Confirm Password</label>
+            <label >Confirm password</label>
             <input type="password" class="input" id="confirm-password">
-            <input type="button" id="submit" value="Submit">
+            <input type="submit" id="submit" value="Submit">
         </form>
     </div>
+    <script src="./validate.js"></script>
 </body>
 </html>
