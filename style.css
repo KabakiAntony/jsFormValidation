@@ -4,7 +4,8 @@
 }
 body{
     background-color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -21,25 +22,38 @@ body{
 }
 .form{
     padding:30px;
+    font-weight: 700;
 }
 .form-header{
     text-align: center;
     background-color:rgba(166, 245, 62, 0.828);
     padding: 10px;
     margin:0;
+    font-weight: 600;
+    font-size: 180%;
+}
+.error{
+    color: rgba(255, 0, 0, 0.849);
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 5px;
+
 }
 .input{
     margin-bottom: 10px;
-    padding-bottom:10px;
+    padding:8px;
     width:100%;
+    font-weight: 700;
 }
 #submit{
     width:100%;
     padding:10px;
     border-radius: 8px;
     font-weight: 700;
+    font-size: 120%;
     margin-top:20px;
     background-color:rgba(166, 245, 62, 0.828);
+    border: none;
 }
 #submit:hover{
     color:rgb(255, 255, 255);
