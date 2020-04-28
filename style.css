@@ -3,9 +3,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(255, 255, 255);
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(121, 117, 117, 0.87);
+    font-family: 'Source Sans Pro', sans-serif;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +12,7 @@ body{
     margin: 0;
 }
 .container{
-    background-color: rgba(32, 34, 34, 0.315);
+    background-color: rgba(255,255,255);
     border-radius:5px;
     width: 350px;
     font-size: small;
@@ -26,17 +25,17 @@ body{
 }
 .form-header{
     text-align: center;
-    background-color:rgba(166, 245, 62, 0.828);
+    background-color:rgb(255,105,180);
     padding: 10px;
     margin:0;
     font-weight: 600;
     font-size: 180%;
+    color: white;
 }
 .error{
-    color: rgba(255, 0, 0, 0.849);
-    font-size: 12px;
-    font-family: sans-serif;
-    margin: 5px;
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    margin-bottom: 3px;
 
 }
 .input{
@@ -52,11 +51,12 @@ body{
     font-weight: 700;
     font-size: 120%;
     margin-top:20px;
-    background-color:rgba(166, 245, 62, 0.828);
+    background-color:rgb(255,105,180);
     border: none;
+    color:rgb(255, 255, 255);
 }
 #submit:hover{
-    color:rgb(255, 255, 255);
-    background-color:rgba(0, 0, 0, 0.513);
+    color:rgb(0, 0, 0);
+    background-color: rgba(121, 117, 117, 0.87);
     cursor: pointer;
 }

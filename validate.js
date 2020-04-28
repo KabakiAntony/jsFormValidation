@@ -19,21 +19,15 @@ submitForm.addEventListener('submit',(e)=>{
     */ 
 
     if(!isEmail(email)){
-        document.getElementById("email").style.backgroundColor = "rgba(204, 120, 120, 0.513)";
-        document.getElementById("email").style.border = "0";
-        document.getElementById("error-email").innerHTML = "enter a valid email !";
+        document.getElementById("error-email").innerHTML = "Enter a valid email !";
         return false;
     }
     if(!isValidPassword(password)){
-        document.getElementById("password").style.backgroundColor = "rgba(204, 120, 120, 0.513)";
-        document.getElementById("password").style.border = "0";
-        document.getElementById("error-password").innerHTML = "password does not meet requirements !";
+        document.getElementById("error-password").innerHTML = "Password does not meet requirements !";
         return false;
     }
     if(!doPasswordsMatch(password,confirmPassword)){
-        document.getElementById("confirm-password").style.backgroundColor = "rgba(204, 120, 120, 0.513)";
-        document.getElementById("confirm-password").style.border = "0";
-        document.getElementById("error-confirm-password").innerHTML = "passwords do not match !";
+        document.getElementById("error-confirm-password").innerHTML = "Passwords do not match !";
         return false;
     }
     console.log("This should only show when all above is true");    
