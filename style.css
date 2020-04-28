@@ -43,10 +43,12 @@ body{
     padding:8px;
     width:100%;
     font-weight: 700;
+    font:inherit;
 }
 #submit{
     width:100%;
     padding:10px;
+    font:inherit;
     border-radius: 8px;
     font-weight: 700;
     font-size: 120%;
