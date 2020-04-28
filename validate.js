@@ -22,8 +22,18 @@ submitForm.addEventListener('submit',(e)=>{
         return false;
     }
     if(!isValidPassword(password.value)){
-        document.getElementById("error-password").innerHTML = "Password does not meet requirements !";
+        document.getElementById("error-password").innerHTML = 
+        `Password should contain atleast 
+        1 uppercase character,
+        1 lowercase character,
+        1 number, 
+        1 special character,
+        atleast 6 characters
+        & not more than 20.`;
         return false;
+    }
+    if(!doPasswordsMatch(password.value,confirmPassword.value)){
+        document.getElementById("error-confirm-password").innerHTML = "Passwords do not match !";
     }
     console.log("This should only show when all above is true");    
 });
