@@ -2,7 +2,7 @@
 let submitForm = document.getElementById("form");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
-let confirmPassword = document.getElementById("confirm-password");
+// let confirmPassword = document.getElementById("confirm-password");
 
 
 submitForm.addEventListener('submit',(e)=>{
@@ -18,7 +18,7 @@ submitForm.addEventListener('submit',(e)=>{
     */ 
 
     if(!isEmail(email.value)){
-        document.getElementById("error-email").innerHTML = "Enter a valid email !";
+        document.getElementById("error-email").innerHTML = "Please enter a valid email address";
         return false;
     }
     if(!isValidPassword(password.value)){
@@ -32,9 +32,9 @@ submitForm.addEventListener('submit',(e)=>{
         & not more than 20.`;
         return false;
     }
-    if(!doPasswordsMatch(password.value,confirmPassword.value)){
-        document.getElementById("error-confirm-password").innerHTML = "Passwords do not match !";
-    }
+    // if(!doPasswordsMatch(password.value,confirmPassword.value)){
+    //     document.getElementById("error-confirm-password").innerHTML = "Passwords do not match !";
+    // }
     console.log("This should only show when all above is true");    
 });
 email.addEventListener('input',(e)=>{
@@ -42,7 +42,7 @@ email.addEventListener('input',(e)=>{
         document.getElementById("error-email").innerHTML = ""; 
     }
     else{
-        document.getElementById("error-email").innerHTML = "Enter a valid email !";
+        document.getElementById("error-email").innerHTML = "Please enter a valid email address";
     }
 });
 password.addEventListener('input',(e)=>{
@@ -57,19 +57,19 @@ password.addEventListener('input',(e)=>{
         1 number, 
         1 special character,
         atleast 6 characters
-        & not more than 20.`;
+        & not more than 20`;
     }
 });
-confirmPassword.addEventListener('input',(e)=>{
-    if(doPasswordsMatch(password.value,confirmPassword.value)){
-        document.getElementById("password").style.backgroundColor= "rgb(232,240,254)";
-        document.getElementById("confirm-password").style.backgroundColor= "rgb(232,240,254)";
-        document.getElementById("error-confirm-password").innerHTML = "";
+// confirmPassword.addEventListener('input',(e)=>{
+//     if(doPasswordsMatch(password.value,confirmPassword.value)){
+//         document.getElementById("password").style.backgroundColor= "rgb(232,240,254)";
+//         document.getElementById("confirm-password").style.backgroundColor= "rgb(232,240,254)";
+//         document.getElementById("error-confirm-password").innerHTML = "";
 
-    }else{
-        document.getElementById("error-confirm-password").innerHTML = "Passwords do not match !";
-    }
-});
+//     }else{
+//         document.getElementById("error-confirm-password").innerHTML = "Passwords do not match !";
+//     }
+// });
 
 
 // in js when dealing with regex declare flags eg "igm"
